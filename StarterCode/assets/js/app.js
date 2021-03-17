@@ -4,10 +4,10 @@ let svgHeight = 500;
 
 //Set margins
 let margin = {
-    top:60,
-    right:60,
-    bottom:60,
-    left:60
+    top: 60,
+    right: 60,
+    bottom: 60,
+    left: 60
 };
 
 //Create chart area
@@ -22,5 +22,12 @@ let svg = d3.select('#scatter')
 
 //Read in CSV
 d3.csv('assets/data/data.csv').then(function (csvInfo) {
-    console.log(csvInfo)
+    console.log(csvInfo);
+
+    //Cast strings to Ints
+    csvInfo.forEach(record => {
+        record.smokes = +record.smokes;
+        record.age = +record.age;
+    });
+
 });
