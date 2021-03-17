@@ -30,4 +30,12 @@ d3.csv('assets/data/data.csv').then(function (csvInfo) {
         record.age = +record.age;
     });
 
+    //Configure the scaling functions
+    let yScale = d3.scaleLinear()
+        .domain([0, d3.max(csvInfo.map (record => record.smokes))])
+        .range([svgHeight, 0]);
+
+    let XScale = d3.scaleLinear()
+        .domain([0, d3.max(csvInfo.map (record => record.age))])
+        .range([0, svgWidth]);
 });
