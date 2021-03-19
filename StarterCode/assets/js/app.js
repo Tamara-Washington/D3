@@ -143,7 +143,7 @@ labelsGroup.append("text")
     .attr("x", 0)
     .attr("y", 20)
     .attr("value", "smokes") 
-    .text("Years Smoking");
+    .text("Smokes (%)");
 
 labelsGroup.append("text")
     .attr("x", 0)
@@ -157,7 +157,7 @@ chartGroup.append("text")
     .attr("x", 0 - (height / 2))
     .attr("dy", "1em")
     .classed("axis-text", true)
-    .text("Age");
+    .text("Age(Median)");
 
   // updateToolTip function above csv import
 circlesGroup = updateToolTip(chosenXAxis, circlesGroup);
