@@ -83,10 +83,10 @@ circlesGroup.on("mouseover", function(event, d) {
 
 })
     // onmouseout event
-    .on("mouseout", function(data, index) {
-      //toolTip.hide(data);
-toolTip.style('display', 'none');
-    });
+//     .on("mouseout", function(data, index) {
+//       //toolTip.hide(data);
+// toolTip.style('display', 'none');
+//     });
 
 return circlesGroup;
 }
@@ -128,12 +128,27 @@ let circlesGroup = chartGroup.selectAll("circle")
     .data(mockData)
     .enter()
     .append("circle")
+    .classed("stateCircle", true)
     .attr("cx", d => xLinearScale(d[chosenXAxis]))
     .attr("cy", d => yLinearScale(d.age))
     .attr("r", 20)
     .attr("fill", "pink")
-    .attr("opacity", ".5")
-    .text(mockData.state);
+    .attr("opacity", ".5");
+
+let textGroup = chartGroup.selectAll(".stateText")
+  .data(mockData)
+  .enter()
+  .append("text")
+  .classed("stateText", true)
+  .attr("x", d => xLinearScale(d[chosenXAxis]))
+  .attr("y", d => yLinearScale(d.age))
+  .attr("f", 3)
+  .attr("font-size", "10px")
+  .text(function(d) {return d.abbr});
+
+
+
+
 
   // Create group for two x-axis labels
 let labelsGroup = chartGroup.append("g")
