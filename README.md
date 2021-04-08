@@ -1,4 +1,6 @@
 # D3 Homework - Data Journalism and D3
+## [See the completed assignment here.](https://tamara-washington.github.io/D3-Challenge/)
+
 
 ![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
 
