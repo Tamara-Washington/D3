@@ -1,5 +1,7 @@
 # D3 Homework - Data Journalism and D3
 
+## See it live [here.](https://tamara-washington.github.io/D3-Challenge/)
+
 ![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
 
 ## Background
@@ -22,13 +24,11 @@ The data set included with the assignment is based on 2014 ACS 1-year estimates 
 
 5. Push the above changes to GitHub or GitLab.
 
-## Your Task
+## The Task
 
-### Core Assignment: D3 Dabbler 
+### D3 Dabbler 
 
-![4-scatter](Images/4-scatter.jpg)
-
-You need to create a scatter plot between two of the data variables such as `Healthcare vs. Poverty` or `Smokers vs. Age`.
+Create a scatter plot between two of the data variables such as `Healthcare vs. Poverty` or `Smokers vs. Age`.
 
 Using the D3 techniques we taught you in class, create a scatter plot that represents each state with circle elements. You'll code this graphic in the `app.js` file of your homework directory—make sure you pull in the data from `data.csv` by using the `d3.csv` function. Your scatter plot should ultimately appear like the image at the top of this section.
 
